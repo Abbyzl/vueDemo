@@ -1,0 +1,49 @@
+.nav-tab-bar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display:box;
+  display: -webkit-box;
+  height: 45px;
+  padding: 8px 0;
+  background-color: @white;
+  backface-visibility: hidden;
+  &:before{
+  	content: '';
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	height: 1px;
+  	width: 100%;
+  	background-color: @lighter-brown;
+  }
+  .nav-item{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+		box-flex:1;
+		-webkit-box-flex:1;
+    text-decoration: none;
+		.icon{
+			width: 30px;
+			height: 30px;
+      line-height: 30px;
+      &:before{
+        font-size: 22px;
+        color: @mian-title;
+      }
+		}
+    .nav-title{
+      display: block;
+      color: @sub-title;
+    }
+    &.router-link-active{
+      .icon:before,
+      .nav-title{
+        color: @darker-red;
+      }      
+    }
+  }
+}

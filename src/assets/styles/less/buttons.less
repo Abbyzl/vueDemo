@@ -1,0 +1,27 @@
+.btn{
+	padding: 6px 12px;
+	border-width: 1px;
+	border-style: solid;
+	.button-variant(@white; @lighter-gray; @lighter-gray);
+	.border-radius(@border-radius-base);
+}
+
+// Button color
+.btn-default{
+	.button-variant(@white; @brown; @brown);
+}
+.btn-primary{
+	.button-variant(@white; @brand-primary; @brand-primary);
+}
+.btn-success{
+	.button-variant(@white; @brand-success; @brand-success);
+}
+.btn-info{
+	.button-variant(@white; @brand-info; @brand-info);
+}
+.btn-warning{
+	.button-variant(@white; @brand-warning; @brand-warning);
+}
+.btn-danger{
+	.button-variant(@white; @brand-danger; @brand-danger);
+}
